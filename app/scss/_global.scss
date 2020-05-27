@@ -25,9 +25,9 @@ li {
 }
 
 body {
-    font-family: 'Quicksand-Regular', sans-serif;
+    @include f300;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 16px;
     color: #555555;
 }
 

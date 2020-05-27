@@ -89,25 +89,24 @@
             color: #898f96;
         }
     }
-}
-
-button {
-    position: absolute;
-    border: none;
-    border-radius: 20px;
-    background-color: $blue;
-    height: 45px;
-    width: 70px;
-    top: 0px;
-    right: 0px;
-    &::before {
-        content: "\f002";
+    button {
         position: absolute;
-        font-family: 'icomoon';
-        font-size: 20px;
-        color: #ffffff;
-        top: 12px;
-        left: 28px;
+        border: none;
+        border-radius: 20px;
+        background-color: $blue;
+        height: 45px;
+        width: 70px;
+        top: 0px;
+        right: 0px;
+        &::before {
+            content: "\f002";
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 20px;
+            color: #ffffff;
+            top: 12px;
+            left: 28px;
+        }
     }
 }
 
@@ -127,6 +126,58 @@ button {
         @include f300;
         font-size: 20px;
         margin-bottom: 50px;
+    }
+}
+
+.create__search {
+    input {
+        width: 808px;
+        height: 55px;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        bottom: -40px;
+        left: 40px;
+        position: absolute;
+        @include f500;
+        z-index: 2;
+        padding: 25px;
+        &::placeholder {
+            color: #676767;
+        }
+    }
+    form {
+        select {
+            bottom: -39px;
+            z-index: 2;
+            position: absolute;
+            width: 190px;
+            height: 53px;
+            right: 292px;
+            border: none;
+            border-left: 1px solid #dcdcdc;
+            padding-left: 20px;
+            @include f300;
+            color: #555555;
+            font-size: 16px;
+            line-height: 42px;
+            cursor: pointer;
+        }
+        button {
+            z-index: 2;
+            position: absolute;
+            bottom: -40px;
+            height: 55px;
+            right: 40px;
+            width: 222px;
+            border: none;
+            border-radius: 5px;
+            background-color: $blue;
+            color: #ffffff;
+            @include f300;
+            font-size: 16px;
+            line-height: 42px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -221,3 +272,135 @@ button {
 }
 
 // end create
+// start sliader.
+.slaider__wrapper {
+    background-color: $bg;
+}
+
+.slaider__caption {
+    height: 850px;
+}
+
+.slaider__caption-box {
+    width: 1140px;
+    height: 110px;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .title {
+        @include f300;
+        font-size: 30px;
+        line-height: 28px;
+        color: #000000;
+        padding: 40px 30px;
+    }
+}
+
+.page-template {
+    display: flex;
+}
+
+.page__list {
+    padding: 0 45px;
+    background-color: #ffffff;
+    height: 450px;
+}
+
+.page__title {
+    padding-top: 50px;
+    color: #000000;
+    @include f500;
+    font-size: 24px;
+}
+
+.page__list-inner {
+    display: flex;
+    justify-content: start;
+}
+
+.page__item {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    &+.page__item {
+        padding-left: 20px;
+    }
+}
+
+.page__caption {
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000000;
+    span {
+        color: #7347c1;
+    }
+}
+
+.page__items {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+}
+
+.page__items-inner li {
+    height: 28px;
+    border-radius: 25px;
+    font-size: 15px;
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+    background-color: #f1f3f6;
+    color: #868c96;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 35px;
+    &+li {
+        margin-left: 7px;
+    }
+}
+
+img.word {
+    margin: 5px 0px;
+    height: max-content;
+}
+
+.sliader__page-price {
+    background-color: $blue;
+    color: #ffffff;
+    height: 32px;
+    border-radius: 25px;
+    padding: 4px 15px;
+    text-align: center;
+    @include f500;
+    font-size: 15px;
+}
+
+.sliader__page-footer {
+    display: flex;
+    text-align: center;
+}
+
+.icon-heart-o,
+.icon-shopping-cart {
+    padding-top: 9px;
+    padding-left: 23px;
+    span {
+        padding-left: 10px;
+        @include f300;
+        font-size: 15px;
+    }
+}
+
+.icon-shopping-cart {
+    color: $blue;
+}
+
+.icons-color {
+    color: #7347c1;
+    span {
+        color: #333333;
+    }
+}
+
+// end sliader

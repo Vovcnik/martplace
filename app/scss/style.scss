@@ -1,6 +1,7 @@
 @import '_vars';
 @import '_global';
 @import '_fonts';
+// start header
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -56,6 +57,11 @@
         &+li {
             margin-left: 20px;
         }
+        &:hover {
+            a {
+                color: $blue;
+            }
+        }
     }
     a {
         color: #333333;
@@ -94,4 +100,124 @@ button {
     width: 70px;
     top: 0px;
     right: 0px;
+    &::before {
+        content: "\f002";
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 20px;
+        color: #ffffff;
+        top: 12px;
+        left: 28px;
+    }
 }
+
+// end header
+// start create 
+.create__wrapper {
+    background-color: #2649cd;
+}
+
+.creat__inner {
+    height: 730px;
+    color: #ffff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    p {
+        @include f300;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+.crate-bg__search {
+    background-image: url(../images/content/bg-search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    height: 180px;
+    bottom: -100px;
+    min-width: 100%;
+}
+
+.create__title h1 {
+    padding-top: 180px;
+    font-size: 50px;
+    @include f700;
+    line-height: 60px;
+    margin-bottom: 40px;
+    span {
+        @include f500;
+    }
+}
+
+.product-btn li {
+    border: 1px solid #ffff;
+    border-radius: 25px;
+    display: inline-block;
+    min-width: 190px;
+    padding: 14px 30px;
+    cursor: pointer;
+    height: 55px;
+    &:hover {
+        background-color: #ffffff;
+        a {
+            color: $blue;
+        }
+    }
+    &+li {
+        margin-left: 30px;
+    }
+    a {
+        color: #ffffff;
+        font-size: 16px;
+        @include f300;
+    }
+}
+
+.create__tabs {
+    height: 710px;
+}
+
+.create__tabs-inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 180px;
+    .tabs-item {
+        width: 350px;
+        height: 400px;
+    }
+    .create__title {
+        @include f300;
+        font-size: 24px;
+        line-height: 7px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        color: #000000;
+    }
+    .text {
+        font-size: 16px;
+        line-height: 30px;
+        @include f300;
+    }
+    .items {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+        border-radius: 4px;
+        padding-top: 40px;
+        margin-top: -40px;
+    }
+}
+
+.tabs__crate-images {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0 auto;
+    height: 110px;
+}
+
+// end create

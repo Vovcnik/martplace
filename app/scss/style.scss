@@ -30,17 +30,102 @@
     }
 }
 
+.header__box {
+    display: flex;
+    min-width: 535px;
+    margin-bottom: 11px;
+}
+
 .header__clik {
-    width: 150px;
-    border-radius: 15px;
-    background-color: $blue;
+    margin-left: 50px;
+    font-size: 20px;
+    position: relative;
+    padding-top: 20px;
     a {
-        color: #ffffff;
-        font-size: 14px;
-        line-height: 28px;
-        @include f500;
-        padding: 4px 15px;
+        color: #7e8fa1;
     }
+    a+a {
+        margin-left: 35px;
+    }
+    span {
+        color: #fff;
+        @include f500;
+        font-size: 14px;
+        position: absolute;
+        top: 3px;
+        margin-left: -11px;
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        line-height: 24px;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.notifications {
+    span {
+        background-color: #ff6a6c;
+    }
+}
+
+.messages {
+    span {
+        background-color: #62d03b;
+    }
+}
+
+.basket {
+    span {
+        background-color: $blue;
+    }
+}
+
+.header__user {
+    display: ruby;
+}
+
+.user__icon {
+    background-image: url(../images/content/user.png);
+    width: 100%;
+    height: 50px;
+    max-width: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: -12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.user__name {
+    display: inline-block;
+}
+
+.user__price {
+    text-align: center;
+    @include f500;
+    font-size: 16px;
+    color: #333333;
+    span {
+        color: $blue;
+        font-size: 15px;
+        padding-right: 50px;
+        text-align: center;
+    }
+}
+
+.header__box .register {
+    width: 151px;
+    border-radius: 15px;
+    background-color: #0674ec;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    @include f500;
+    padding: 2px 15px;
+    height: 33px;
+    margin-top: 10px;
 }
 
 .menu {
@@ -277,9 +362,7 @@
     background-color: $bg;
 }
 
-.slaider__caption {
-    height: 850px;
-}
+.slaider__caption {}
 
 .slaider__caption-box {
     width: 1140px;
@@ -315,7 +398,7 @@
 
 .page__list-inner {
     display: flex;
-    justify-content: start;
+    justify-content: flex;
 }
 
 .page__item {
@@ -381,10 +464,13 @@ img.word {
     text-align: center;
 }
 
-.icon-heart-o,
-.icon-shopping-cart {
-    padding-top: 9px;
-    padding-left: 23px;
+.sliader__page-basket:before {
+    content: "\f07a";
+    font-family: "icomoon";
+    position: absolute;
+    font-size: 15px;
+    padding-top: 2px;
+    margin-left: -21px;
     span {
         padding-left: 10px;
         @include f300;
@@ -392,14 +478,29 @@ img.word {
     }
 }
 
-.icon-shopping-cart {
+.sliader__page-like:before {
+    content: "\f08a";
+    font-family: 'icomoon';
+    position: absolute;
+    margin-left: -21px;
+    font-size: 15px;
+    padding-top: 2px;
+}
+
+.icon-cart {
     color: $blue;
+    line-height: 2;
+    margin-left: 41px;
 }
 
 .icons-color {
     color: #7347c1;
+    line-height: 2;
+    margin-left: 41px;
     span {
         color: #333333;
+        @include f300;
+        font-size: 15px;
     }
 }
 

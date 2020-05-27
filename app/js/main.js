@@ -1,9 +1,7 @@
 $(function() {
 
-    $(".flex-star").rateYo({
-        rating: 5,
-        starWidth: "12px",
-        readOnly: true
+    $("flex-star").rateYo({
+        rating: 3.6
     });
 
 });

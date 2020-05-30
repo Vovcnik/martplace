@@ -1,7 +1,16 @@
 $(function() {
 
-    $("flex-star").rateYo({
-        rating: 3.6
+    $(".rate-star").rateYo({
+        rating: 5,
+        starWidth: "17px",
+        rtl: true
+    });
+
+
+    $('.product__item-inner').slick({
+        slidesToScroll: 1,
+        arrows: true,
+
     });
 
 });

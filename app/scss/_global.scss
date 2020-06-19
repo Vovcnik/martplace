@@ -28,13 +28,19 @@ body {
     @include f300;
     line-height: 24px;
     font-size: 16px;
-    color: #555555;
+    color: #5555;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 img {

@@ -1,20 +1,20 @@
-                                    html {
+html {
     box-sizing: border-box;
 }
 
 *,
-efore,
+*::before,
 *::after {
-    box-s izing: inherit;
+    box-sizing: inherit;
 }
 
 .box {
-    display: fle x;
+    display: flex;
 }
 
 a {
-    display: in line-block;
-    text-decorat ion: none;
+    display: inline-block;
+    text-decoration: none;
 }
 
 ul,
@@ -22,16 +22,13 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
-    ;
 }
 
-{
-    body {}
+body {
     @include f300;
-    line-height: 24p x;
-    ;
+    line-height: 24px;
     font-size: 16px;
-    color: #555;
+    color: #555555;
 }
 
 .container {
@@ -51,29 +48,3 @@ img {
     background-position: center;
     background-size: cover;
 }
-
--usr-obeore {
-    fc0 ion-ph1before {
-        42 aarm {
-            50;
-            drer2 coen "\95d";
-        }
-        bubl2e contnt:"\e96e";
-        n-users:before {
-            7 on-lock:before {
-                content: "\e98f";
-                icon-magic-wand:before {
-                    content: "\e997";
-                    n-stats-bars2:before {
-                        content:"\e99d"con-leaf:before {
-                            content: "\e9a4";
-                            .icon-briefcase1:before {
-                                content: "\e9ae";
-                                on-cloud-download:before {
-                                    content: "\e9c2";
-                                }
-                                con-smile:before {
-                                    content: "\e9e1";
-                                    icon-dots-horizontal-triple:befo {
-                                        content: "\e901";
-                                    }

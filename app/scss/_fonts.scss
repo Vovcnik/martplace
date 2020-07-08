@@ -1,133 +1,241 @@
-                                                                                                                                                                            @font-face {
-    font-family: 'Quand-Regu    lar', sans-serif;
-     src: url('../fontuicksan   d-Regular.woff2') format('woff2'), url('../fonts/Quicksand-Regular.woff') format('woff');
-      font-display: swap @font  -face {
-           font-family: 'icomoo n
-     src: url('../fonts/icoon.eot?ujns2e');
-        src: url('../fonts/comoo    n.eot?ujns2e#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ujns2e') format('truetype'), url('../fonts/icomoon.woff?ujns2e') format('woff'), url('../fonts/icomoon.svg?ujns2e#icomoon') format('svg');
-         font-weight: normal font   -style: normal;
-          font-display: block;  
-           lass^="icon-"], 
-           ass*=" icon-"] { 
-                /* use !important to prevent issues with browser extensions that change fonts */
-            font-family: 'icn' !    important;
-             speak: none;   
-              font-style: norm  al;
-               font-weight: nor mal;
-                font-variant: normal;
-            text-transform:     none;
-             line-height: 1;   
-              /* Better Font R  endering ======== */
-              -webkit-font-smoothi  ngantialiased;
-               -moz-osx-font-smooth ing grayscale;
-                .icon-certificate:be {
-                content: "\e900"    ;
-                 on-search:before    {
-                      content: "\f002"  ;
-                   } 
-                    con-envelope-o:befor {
-                    content: "\f003"    ;
-                     .icon-star-o   :before {
-                         cont   ent: "\f006";
-                          n-us  er:before {
-                                content: "\f007";
-                                con-th-large:before {
-                                    content: "\f009";
-                                    .icon-cog:before {
-                                        content: "\f013";
-                                        on-gear:before {
-                                            content: "\f013";
-                                        }
-                                        con-trash-o:before {
-                                            content: "\f014";
-                                            .icon-home:before {
-                                                content: "\f015";
-                                                on-book:before {
-                                                    content: "\f02d";
-                                                    icon-map-marker:before {
-                                                        content: "\f041";
-                                                        n-eye:before {
-                                                            content: "\f06e";
-                                                            on-shopping-cart:befre {
-                                                                content: "\f07a";
-                                                            }
-                                                            con-heart-o:before {
-                                                                content: "\f08a";
-                                                                .icon-sign-in:before {
-                                                                    content: "\f090";
-                                                                    on-upload:before {
-                                                                        content: "\f093";
-                                                                        icon-phone:before {
-                                                                            content: "\f095";
-                                                                            n-twitter:before {
-                                                                                content: "\f099" con-facebook:before {
-                                                                                    content: "\f09a";
-                                                                                    icon-facebook-f:before {
-                                                                                        content: "\f09a";
-                                                                                        n-bell-o:before {
-                                                                                            content: "\f0a2";
-                                                                                        }
-                                                                                        con-briefcase:before {
-                                                                                            content: "\f0b1";
-                                                                                            icon-list-ul:before {
-                                                                                                content: "\f0ca";
-                                                                                                n-comment-o:before {
-                                                                                                    content: "\f0e5";
-                                                                                                    con-building-o:before {
-                                                                                                        content: "\f0f7";
-                                                                                                        icon-angle-left:befo {
-                                                                                                            content: "\f104";
-                                                                                                            n-angle-right:before {
-                                                                                                                content: "\f105";
-                                                                                                            }
-                                                                                                            con-angle-down:before {
-                                                                                                                content: "\f107";
-                                                                                                                .icon-mail-reply-all:before {
-                                                                                                                    content: "\f122";
-                                                                                                                    on-reply-all:before {
-                                                                                                                        content: "\f122";
-                                                                                                                    }
-                                                                                                                    icon-long-arrow-left:bef {
-                                                                                                                        content: "\f177";
-                                                                                                                        .icon-long-arrow-right: befor content: "\f178";
-                                                                                                                        n-google:before {
-                                                                                                                            content: "\f1a0";
-                                                                                                                        }
-                                                                                                                        con-file-archive-o:befor {
-                                                                                                                            content: "\f1c6";
-                                                                                                                            .icon-file-zip-o:before {
-                                                                                                                                content: "\f1c6";
-                                                                                                                                on-pinterest-p:before {
-                                                                                                                                    content: "\f231";
-                                                                                                                                }
-                                                                                                                                icon-shopping-basket:before content: "\f291";
-                                                                                                                                n-question-circle-o:before {
-                                                                                                                                    content: "\f29c";
-                                                                                                                                    on-user-o:before {
-                                                                                                                                        content: "\f2c0";
-                                                                                                                                        icon-phone1:before {
-                                                                                                                                            content: "\e942";
-                                                                                                                                            n-alarm:before {
-                                                                                                                                                content: "\e950";
-                                                                                                                                                on-drawer2:before {
-                                                                                                                                                    content: "\e95d";
-                                                                                                                                                }
-                                                                                                                                                icon-bubble2:before content: "\e96e";
-                                                                                                                                                n-users:before {
-                                                                                                                                                    content: "\e972" on-lock:before {
-                                                                                                                                                        content: "\e98f";
-                                                                                                                                                        icon-magic-wand:before {
-                                                                                                                                                            content: "\e997";
-                                                                                                                                                            n-stats-bars2:before {
-                                                                                                                                                                content: "\e99d" con-leaf:before {
-                                                                                                                                                                    content: "\e9a4";
-                                                                                                                                                                    .icon-briefcase1:before {
-                                                                                                                                                                        content: "\e9ae";
-                                                                                                                                                                        on-cloud-download:before {
-                                                                                                                                                                            content: "\e9c2";
-                                                                                                                                                                        }
-                                                                                                                                                                        con-smile:before {
-                                                                                                                                                                            content: "\e9e1";
-                                                                                                                                                                            icon-dots-horizontal-triple:befo {
-                                                                                                                                                                                content: "\e901";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }                                                                            
-                                
+@font-face {
+    font-family: 'Quicksand-Regular', sans-serif;
+    src: url('../fonts/Quicksand-Regular.woff2') format('woff2'), url('../fonts/Quicksand-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ujns2e');
+    src: url('../fonts/icomoon.eot?ujns2e#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ujns2e') format('truetype'), url('../fonts/icomoon.woff?ujns2e') format('woff'), url('../fonts/icomoon.svg?ujns2e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-certificate:before {
+    content: "\e900";
+}
+
+.icon-search:before {
+    content: "\f002";
+}
+
+.icon-envelope-o:before {
+    content: "\f003";
+}
+
+.icon-star-o:before {
+    content: "\f006";
+}
+
+.icon-user:before {
+    content: "\f007";
+}
+
+.icon-th-large:before {
+    content: "\f009";
+}
+
+.icon-cog:before {
+    content: "\f013";
+}
+
+.icon-gear:before {
+    content: "\f013";
+}
+
+.icon-trash-o:before {
+    content: "\f014";
+}
+
+.icon-home:before {
+    content: "\f015";
+}
+
+.icon-book:before {
+    content: "\f02d";
+}
+
+.icon-map-marker:before {
+    content: "\f041";
+}
+
+.icon-eye:before {
+    content: "\f06e";
+}
+
+.icon-shopping-cart:before {
+    content: "\f07a";
+}
+
+.icon-heart-o:before {
+    content: "\f08a";
+}
+
+.icon-sign-in:before {
+    content: "\f090";
+}
+
+.icon-upload:before {
+    content: "\f093";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-facebook:before {
+    content: "\f09a";
+}
+
+.icon-facebook-f:before {
+    content: "\f09a";
+}
+
+.icon-bell-o:before {
+    content: "\f0a2";
+}
+
+.icon-briefcase:before {
+    content: "\f0b1";
+}
+
+.icon-list-ul:before {
+    content: "\f0ca";
+}
+
+.icon-comment-o:before {
+    content: "\f0e5";
+}
+
+.icon-building-o:before {
+    content: "\f0f7";
+}
+
+.icon-angle-left:before {
+    content: "\f104";
+}
+
+.icon-angle-right:before {
+    content: "\f105";
+}
+
+.icon-angle-down:before {
+    content: "\f107";
+}
+
+.icon-mail-reply-all:before {
+    content: "\f122";
+}
+
+.icon-reply-all:before {
+    content: "\f122";
+}
+
+.icon-long-arrow-left:before {
+    content: "\f177";
+}
+
+.icon-long-arrow-right:before {
+    content: "\f178";
+}
+
+.icon-google:before {
+    content: "\f1a0";
+}
+
+.icon-file-archive-o:before {
+    content: "\f1c6";
+}
+
+.icon-file-zip-o:before {
+    content: "\f1c6";
+}
+
+.icon-pinterest-p:before {
+    content: "\f231";
+}
+
+.icon-shopping-basket:before {
+    content: "\f291";
+}
+
+.icon-question-circle-o:before {
+    content: "\f29c";
+}
+
+.icon-user-o:before {
+    content: "\f2c0";
+}
+
+.icon-phone1:before {
+    content: "\e942";
+}
+
+.icon-alarm:before {
+    content: "\e950";
+}
+
+.icon-drawer2:before {
+    content: "\e95d";
+}
+
+.icon-bubble2:before {
+    content: "\e96e";
+}
+
+.icon-users:before {
+    content: "\e972";
+}
+
+.icon-lock:before {
+    content: "\e98f";
+}
+
+.icon-magic-wand:before {
+    content: "\e997";
+}
+
+.icon-stats-bars2:before {
+    content: "\e99d";
+}
+
+.icon-leaf:before {
+    content: "\e9a4";
+}
+
+.icon-briefcase1:before {
+    content: "\e9ae";
+}
+
+.icon-cloud-download:before {
+    content: "\e9c2";
+}
+
+.icon-smile:before {
+    content: "\e9e1";
+}
+
+.icon-dots-horizontal-triple:before {
+    content: "\e901";
+}

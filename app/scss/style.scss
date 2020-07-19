@@ -162,7 +162,7 @@
 }
 
 .search__header-top {
-    width: 340px;
+    width: 363px;
     margin-bottom: 20px;
     margin-right: 0;
     position: relative;
@@ -832,7 +832,7 @@ button.slick-prev {
         color: #747b86;
         border-radius: 25px;
         padding: 10px;
-        padding: 9px 17px 9px 16px;
+        padding: 9px 17px;
         border: none;
         cursor: pointer;
         margin: 30px 10px;
@@ -879,6 +879,10 @@ button.slick-prev {
         text-align: center;
         padding-top: 8px;
         cursor: pointer;
+        &:hover {
+            color: $blue;
+            background-color: #fff;
+        }
     }
     .product__item-content {
         padding-left: 0px;
@@ -1525,3 +1529,187 @@ button.slick-prev {
 }
 
 //end ready
+// start footer
+.footer__wrapper {
+    background-color: #262b30;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__copy-wrapper {
+    background-color: #192027;
+}
+
+.footer__col-info {
+    margin-left: 22px;
+}
+
+.footer__col {
+    width: 287px;
+    color: #9999;
+    line-height: 26px;
+    margin-right: 50px;
+    position: relative;
+    a {
+        color: #9999;
+        line-height: 26px;
+    }
+    p {
+        line-height: 28px;
+        color: #9999;
+    }
+}
+
+.logo__text-footer a {
+    @include f700;
+    padding-top: 5px;
+    padding-left: 4px;
+    font-size: 24px;
+    line-height: 22px;
+    color: #fff;
+    span {
+        color: $blue;
+    }
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.footer__copy-text {
+    height: 95px;
+    @include f300;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 27px;
+    span {
+        color: #fff;
+        padding-left: 4px;
+    }
+}
+
+.footer__info-phone::before {
+    content: "\f095";
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 16px;
+    line-height: 28px;
+    left: -24px;
+    color: #fff;
+}
+
+.footer__col-mail {
+    margin-bottom: 10px;
+    &::before {
+        content: "\f003";
+        font-family: 'icomoon', sans-serif;
+        position: absolute;
+        font-size: 16px;
+        line-height: 28px;
+        left: -24px;
+        color: #fff;
+    }
+}
+
+.footer__col-adress::before {
+    content: "\f041";
+    font-family: 'icomoon', sans-serif;
+    position: absolute;
+    font-size: 16px;
+    line-height: 28px;
+    left: -22px;
+    color: #fff;
+    top: 72px;
+}
+
+.footer__col-title {
+    color: #fff;
+    @include f300;
+    font-size: 18px;
+    line-height: 42px;
+    margin-bottom: 18px;
+}
+
+.footer__col-menu a {
+    line-height: 32px;
+}
+
+.footer__social-text p {
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.footer__search {
+    width: 363px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    position: relative;
+    input {
+        display: block;
+        border: 1px solid #d9dfe5;
+        border-radius: 25px;
+        width: 100%;
+        height: 45px;
+        @include f500;
+        padding-left: 23px;
+        &::placeholder {
+            color: #898f96;
+        }
+    }
+    button {
+        position: absolute;
+        border: none;
+        border-radius: 50px;
+        background-color: $blue;
+        height: 45px;
+        width: 100px;
+        top: 0px;
+        right: -1px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.footer__social-link {
+    margin-top: 46px;
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 13px;
+        }
+    }
+    a {
+        width: 42px;
+        height: 42px;
+        background-image: url(../images/css_sprites.png);
+    }
+}
+
+.link-facebook {
+    background-position: -42px -0;
+}
+
+.link-google {
+    background-position: -0 -42px;
+}
+
+.link-in {
+    background-position: -42px -42px;
+}
+
+.link-pinterest {
+    background-position: -84px -0;
+}
+
+.link-twitter {
+    background-position: -84px -42px;
+}
+
+// end footer

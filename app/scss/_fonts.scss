@@ -28,6 +28,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-play:before {
+    content: "\ea1d";
+}
+
+.icon-play3:before {
+    content: "\ea1c";
+}
+
+.icon-arrow_drop_up:before {
+    content: "\e902";
+}
+
 .icon-certificate:before {
     content: "\e900";
 }

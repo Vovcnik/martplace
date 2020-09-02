@@ -31,4 +31,6 @@ $(function() {
 
     var mixer = mixitup(".release__products-inner");
 
+
+
 });

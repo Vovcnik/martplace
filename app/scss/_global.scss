@@ -42,6 +42,32 @@ body {
     margin: 0 auto;
 }
 
+.breadcrumbs {
+    &__inner {
+        padding-top: 25px;
+    }
+    &__wrapper {
+        background: linear-gradient(to right, #4a299f, #3533ba, #1742e4);
+    }
+    &__list {
+        li {
+            display: inline-block;
+            &:last-child {
+                a,
+                span {
+                    color: #bfcad7;
+                }
+            }
+        }
+        a {
+            color: #ffff;
+        }
+    }
+    h1 {
+        color: #ffff;
+    }
+}
+
 img {
     background-repeat: no-repeat;
     background-position: center;

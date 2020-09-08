@@ -28,6 +28,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-th:before {
+    content: "\f00a";
+}
+
+.icon-th-list:before {
+    content: "\f00b";
+}
+
 .icon-play:before {
     content: "\ea1d";
 }

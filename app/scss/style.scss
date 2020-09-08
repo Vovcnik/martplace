@@ -267,18 +267,6 @@
     padding: 0;
 }
 
-.Rectangle_236_copy {
-    background-image: -webkit-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
-    background-image: -ms-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
-    opacity: 0.902;
-    position: absolute;
-    left: 21px;
-    top: 3159px;
-    width: 1920px;
-    height: 180px;
-    z-index: 7;
-}
-
 .messages__menu-title {
     padding: 24px;
 }
@@ -705,6 +693,7 @@
         width: 70px;
         top: 0px;
         right: 0px;
+        cursor: pointer;
         &::before {
             content: "\f002";
             position: absolute;
@@ -763,12 +752,36 @@
         @include f300;
         height: 45px;
         width: 112px;
+        cursor: pointer;
         top: 0px;
         right: -3px;
     }
 }
 
 // end breadcrumbs
+// category__page start
+.category__page-top {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    min-height: 100px;
+}
+
+.category__page-inner {
+    display: flex;
+    padding-top: 20px;
+    text-align: center;
+    li {
+        display: inline-block;
+    }
+    li+li {
+        padding-left: 15px;
+    }
+    ul+ul {
+        padding-left: 370px;
+    }
+}
+
+// category__page end
 // start create 
 .create__wrapper {
     background-color: #2649cd;
@@ -1242,7 +1255,6 @@ button.slick-prev {
 
 .product__item-row {
     display: flex;
-    justify-content: start;
     text-align: center;
 }
 
@@ -1269,7 +1281,6 @@ button.slick-prev {
 
 .product__item-box {
     display: flex;
-    justify-content: start;
     margin-bottom: 46px;
 }
 

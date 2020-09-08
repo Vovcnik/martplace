@@ -687,7 +687,7 @@
     input {
         display: block;
         border: 1px solid #d9dfe5;
-        border-radius: 20px;
+        border-radius: 25px;
         width: 100%;
         height: 45px;
         @include f500;
@@ -699,7 +699,7 @@
     button {
         position: absolute;
         border: none;
-        border-radius: 20px;
+        border-radius: 25px;
         background-color: $blue;
         height: 45px;
         width: 70px;
@@ -719,6 +719,55 @@
 
 // end header
 // start breadcrumbs
+.breadcrumbs-inner {
+    text-align: center;
+    p {
+        color: #FFF;
+        font-size: 26px;
+        line-height: 70px;
+    }
+    p span {
+        @include f500;
+    }
+}
+
+.category__list {
+    font-size: 15px;
+}
+
+.search__breadcrumbs-top {
+    width: 563px;
+    margin-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    input {
+        display: block;
+        border: 1px solid #d9dfe5;
+        border-radius: 25px;
+        width: 100%;
+        height: 45px;
+        @include f500;
+        padding-left: 23px;
+        &::placeholder {
+            color: #676767;
+        }
+    }
+    button {
+        position: absolute;
+        border: none;
+        border-radius: 25px;
+        background-color: $blue;
+        color: #ffffff;
+        font-size: 15px;
+        @include f300;
+        height: 45px;
+        width: 112px;
+        top: 0px;
+        right: -3px;
+    }
+}
+
 // end breadcrumbs
 // start create 
 .create__wrapper {
@@ -1912,7 +1961,7 @@ button.slick-prev {
 
 .latest__news-item {
     max-width: 361px;
-    height: 475px;
+    min-height: 475px;
     margin-bottom: 100px;
     border-radius: 4px;
     background-color: #fff;
@@ -1964,11 +2013,16 @@ button.slick-prev {
 .latest__news-content p {
     line-height: 30px;
     padding-left: 20px;
-    width: 320px;
+    min-width: 320px;
 }
 
 .latest__item-footer {
     border-top: 1px solid #ececec;
+    margin-top: 30px;
+}
+
+.latest__news-inner {
+    min-height: 50%;
 }
 
 .latest__item-footer-inner {

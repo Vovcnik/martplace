@@ -27,10 +27,29 @@ $(function() {
 
     });
 
+    $(".js-range-slaider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 400,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
+
     $('input[type="file"], select').styler();
 
+
+    $('.icon-th-list').on('click', function() {
+        $('.mix__items').addClass('list');
+        $('.icon-th-list').addClass('active');
+        $('.icon-th').removeClass('active');
+    });
+    $('.icon-th').on('click', function() {
+        $('.mix__items').removeClass('list');
+        $('.icon-th').addClass('active');
+        $('.icon-th-list').removeClass('active');
+    });
+
+
     var mixer = mixitup(".release__products-inner");
-
-
-
 });

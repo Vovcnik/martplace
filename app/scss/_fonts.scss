@@ -28,6 +28,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
+
+.icon-arrow-left2:before {
+    content: "\ea40";
+}
+
+.icon-radio-unchecked:before {
+    content: "\ea56";
+}
+
 .icon-th:before {
     content: "\f00a";
 }

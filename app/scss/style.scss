@@ -1016,16 +1016,53 @@
                 &.list {
                     max-width: 100%;
                     width: 847px;
-                    min-height: 210px;
+                    min-height: 206px;
                     .mix__items-img {
                         float: left;
+                        min-width: 230px;
+                        min-height: 210px;
+                        img {
+                            border-top-right-radius: none;
+                            border-bottom-left-radius: 4px;
+                            height: 210px;
+                            width: 230px;
+                        }
+                    }
+                    .mix__themes-market {
+                        border-bottom: none;
                     }
                 }
             }
             
-            .img {
-                width: 230px;
-                float: left;
+            .mix__item {
+                width: 847px;
+                background-color: #fff;
+                border-radius: 5px;
+                display: flex;
+                .mix__items-img {
+                    display: flex;
+                }
+                .mix__items-content {
+                    padding: 25px 20px;
+                }
+                .mix__items-inner {
+                    border-right: 1px solid #ececec;
+                    padding-right: 20px;
+                }
+                .mix__items-holder {
+                    width: 215px;
+                    .text {
+                        color: #555555;
+                        line-height: 30px;
+                        padding-bottom: 25px;
+                    }
+                }
+                .mix__items-title {
+                    color: #000;
+                    font-size: 18px;
+                    @include f500;
+                    padding-bottom: 20px;
+                }
             }
             
             .mix__wordpress {

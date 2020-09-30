@@ -14,6 +14,13 @@ $(function() {
         spacing: "5px",
         ratedFill: "#ffc000"
     });
+    $(".rate-starss").rateYo({
+        rating: 4.5,
+        starWidth: "18px",
+        readOnly: true,
+        spacing: "5px",
+        ratedFill: "#ffc000"
+    });
 
     $('.product__item-inner').slick({
         slidesToScroll: 1,
@@ -46,6 +53,7 @@ $(function() {
     });
     $('.icon-th').on('click', function() {
         $('.mix__items').removeClass('list');
+        $('.mix__item').addClass('list');
         $('.icon-th').addClass('active');
         $('.icon-th-list').removeClass('active');
     });

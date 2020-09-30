@@ -1036,25 +1036,74 @@
             
             .mix__item {
                 width: 847px;
+                height: 210px;
                 background-color: #fff;
                 border-radius: 5px;
                 display: flex;
+                transition: all .5s;
                 .mix__items-img {
-                    display: flex;
+                    display: none;
                 }
                 .mix__items-content {
                     padding: 25px 20px;
                 }
                 .mix__items-inner {
-                    border-right: 1px solid #ececec;
-                    padding-right: 20px;
+                    display: flex;
+                }
+                .mix__themes-market {
+                    display: none;
                 }
                 .mix__items-holder {
-                    width: 215px;
+                    width: 235px;
+                    border-right: 1px solid #ececec;
+                    padding-right: 20px;
                     .text {
                         color: #555555;
                         line-height: 30px;
-                        padding-bottom: 25px;
+                    }
+                }
+                &.list {
+                    width: 262px;
+                    height: 370px;
+                    display: block;
+                    .mix__items-holder {
+                        border-right: none;
+                        width: 100%;
+                        padding: 0;
+                        .text {
+                            display: none;
+                        }
+                    }
+                    .mix__themes-market {
+                        display: flex;
+                    }
+                    .mix__items-img {
+                        display: flex;
+                    }
+                    .comments {
+                        display: none;
+                    }
+                    .mix__items-content {
+                        padding: 0;
+                    }
+                    .price-wordpress {
+                        display: none;
+                    }
+                    .mix__items-price {
+                        display: none;
+                    }
+                    .mix__item-img {
+                        display: none;
+                    }
+                    .mix__items-inner {
+                        display: block;
+                    }
+                    .mix__items-social {
+                        border-right: none;
+                    }
+                    .mix__items-title {
+                        padding-left: 20px;
+                        padding-top: 20px;
                     }
                 }
                 .mix__items-title {
@@ -1062,6 +1111,54 @@
                     font-size: 18px;
                     @include f500;
                     padding-bottom: 20px;
+                }
+                .mix__items-social {
+                    border-right: 1px solid #ececec;
+                    padding-right: 20px;
+                    a {
+                        display: flex;
+                    }
+                }
+                .comments {
+                    display: grid;
+                    padding-left: 23px;
+                    padding-top: 25px;
+                    color: #6f7d8d;
+                    span {
+                        padding-bottom: 15px;
+                    }
+                    .icon-heart-o::before,
+                    .icon-bubble2::before {
+                        color: #7f4ec2;
+                        padding-right: 10px;
+                    }
+                    .coments-stars {
+                        display: flex;
+                        span {
+                            padding-left: 15px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .mix__items-price {
+                    text-align: center;
+                    padding-top: 35px;
+                    padding-left: 10px;
+                    color: $blue;
+                    .price {
+                        @include f500;
+                        background-color: #e6f1fd;
+                        border-radius: 50px;
+                        padding: 7px 33px;
+                        margin-bottom: 30px;
+                        margin-left: 20px;
+                    }
+                    .icon-shopping-cart::before {
+                        padding-right: 10px;
+                    }
+                    span {
+                        padding-left: 15px;
+                    }
                 }
             }
             

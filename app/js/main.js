@@ -48,6 +48,7 @@ $(function() {
 
     $('.icon-th-list').on('click', function() {
         $('.mix__items').addClass('list');
+        $('.mix__item').removeClass('list');
         $('.icon-th-list').addClass('active');
         $('.icon-th').removeClass('active');
     });

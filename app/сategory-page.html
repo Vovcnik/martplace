@@ -606,27 +606,41 @@
                 <div class="category__page-top">
                     <div class="container">
                         <div class="category__page-inner">
+
                             <ul>
                                 <li>
-                                    <button href="#">New Products</button>
-                                </li>
-                                <li>
-                                    <button href="#">Popular Products</button>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="border borders">
-                                    <a href="#">Price : <span>Low to High</span> </a>
-                                </li>
-                                <li class="border borders">
-                                    <a href="#"><span> 12 Items Per Page</span></a>
-                                </li>
-                                <li class="border btn">
-                                    <button class="icon-th active" href="#"></button>
-                                    <button class="icon-th-list" href="#"></button>
+                                    <button type="button" data-filter=".category-new">New Products</button>
                                 </li>
 
+                                <li>
+                                    <button type="button" data-filter=".category-popular">Popular Products</button>
+                                </li>
+                                <li>
+                                    <button type="button" data-filter="all">All</button>
+                                </li>
                             </ul>
+
+                            <form>
+
+
+                                <select>
+                                        <option value="1">Price: Low to High</option>
+                                        <option value="2">Price: High to Low</option>
+                                        
+                                    </select>
+                                <select>
+                                            <option value="1">12 Items Per Page</option>
+                                            <option value="2">8 Items Per Page</option>
+                                            <option value="3">4 Items Per Page</option>
+                                        </select>
+
+                            </form>
+                            <div class="border btn">
+                                <button class="icon-th active" href="#"></button>
+                                <button class="icon-th-list" href="#"></button>
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -711,9 +725,107 @@
                                 </div>
 
                             </aside>
-                            <div class="product-page__content">
+                            <div class="product-page__container">
                                 <div class="mix__wordpress-themes">
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-new" data-order="1">
+                                        <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
+                                        <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
+                                        <div class="mix__items-content">
+                                            <div class="mix__items-inner">
+                                                <div class="mix__items-holder">
+                                                    <a href="#" class="mix__items-title">Finance and new</a>
+                                                    <div class="text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</div>
+                                                    <div class="price-wordpress">
+                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
+                                                        <p>Wordpress</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mix__items-social">
+                                                    <div class="mix__themes">
+                                                        <a href="#"><img src="images/content/Ellipse 6.png" alt=""></a>
+                                                        <p>Theme-Valley</p>
+                                                    </div>
+                                                    <div class="mix__themes-market">
+                                                        <div class="rate-stars"></div>
+                                                        <span>427</span>
+                                                    </div>
+                                                    <div class="comments">
+                                                        <span class="icon-heart-o">90 loves</span>
+                                                        <span class="icon-bubble2">90 Comments</span>
+                                                        <div class="coments-stars">
+                                                            <div class="rate-stars"></div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mix__items-price">
+                                                    <div class="price">$18</div>
+                                                    <span class="icon-shopping-cart">427</span>
+                                                </div>
+                                                <div class="mix__theme-price">
+                                                    <div class="price">$18</div>
+                                                    <div class="price-wordpres">
+                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
+                                                        <p>Wordpress</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="mix__item list less category-popular" data-order="2">
+                                        <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
+                                        <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
+                                        <div class="mix__items-content">
+                                            <div class="mix__items-inner">
+                                                <div class="mix__items-holder">
+                                                    <a href="#" class="mix__items-title">Finance and popular</a>
+                                                    <div class="text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</div>
+                                                    <div class="price-wordpress">
+                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
+                                                        <p>Wordpress</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mix__items-social">
+                                                    <div class="mix__themes">
+                                                        <a href="#"><img src="images/content/Ellipse 6.png" alt=""></a>
+                                                        <p>Theme-Valley</p>
+                                                    </div>
+                                                    <div class="mix__themes-market">
+                                                        <div class="rate-stars"></div>
+                                                        <span>427</span>
+                                                    </div>
+                                                    <div class="comments">
+                                                        <span class="icon-heart-o">90 loves</span>
+                                                        <span class="icon-bubble2">90 Comments</span>
+                                                        <div class="coments-stars">
+                                                            <div class="rate-stars"></div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mix__items-price">
+                                                    <div class="price">$18</div>
+                                                    <span class="icon-shopping-cart">427</span>
+                                                </div>
+                                                <div class="mix__theme-price">
+                                                    <div class="price">$18</div>
+                                                    <div class="price-wordpres">
+                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
+                                                        <p>Wordpress</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="mix__item list less category-new" data-order="3">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -762,7 +874,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-popular" data-order="4">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -811,7 +923,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-popular" data-order="5">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -860,7 +972,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-new" data-order="6">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -909,7 +1021,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-a" data-order="7">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -958,7 +1070,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-a" data-order="8">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -1007,7 +1119,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-a" data-order="9">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -1056,155 +1168,7 @@
 
 
                                     </div>
-                                    <div class="mix__item list">
-                                        <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
-                                        <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
-                                        <div class="mix__items-content">
-                                            <div class="mix__items-inner">
-                                                <div class="mix__items-holder">
-                                                    <a href="#" class="mix__items-title">Finance and Consulting Business Theme</a>
-                                                    <div class="text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</div>
-                                                    <div class="price-wordpress">
-                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
-                                                        <p>Wordpress</p>
-                                                    </div>
-                                                </div>
-                                                <div class="mix__items-social">
-                                                    <div class="mix__themes">
-                                                        <a href="#"><img src="images/content/Ellipse 6.png" alt=""></a>
-                                                        <p>Theme-Valley</p>
-                                                    </div>
-                                                    <div class="mix__themes-market">
-                                                        <div class="rate-stars"></div>
-                                                        <span>427</span>
-                                                    </div>
-                                                    <div class="comments">
-                                                        <span class="icon-heart-o">90 loves</span>
-                                                        <span class="icon-bubble2">90 Comments</span>
-                                                        <div class="coments-stars">
-                                                            <div class="rate-stars"></div>
-                                                            <span>(34)</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="mix__items-price">
-                                                    <div class="price">$18</div>
-                                                    <span class="icon-shopping-cart">427</span>
-                                                </div>
-                                                <div class="mix__theme-price">
-                                                    <div class="price">$18</div>
-                                                    <div class="price-wordpres">
-                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
-                                                        <p>Wordpress</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="mix__item list">
-                                        <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
-                                        <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
-                                        <div class="mix__items-content">
-                                            <div class="mix__items-inner">
-                                                <div class="mix__items-holder">
-                                                    <a href="#" class="mix__items-title">Finance and Consulting Business Theme</a>
-                                                    <div class="text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</div>
-                                                    <div class="price-wordpress">
-                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
-                                                        <p>Wordpress</p>
-                                                    </div>
-                                                </div>
-                                                <div class="mix__items-social">
-                                                    <div class="mix__themes">
-                                                        <a href="#"><img src="images/content/Ellipse 6.png" alt=""></a>
-                                                        <p>Theme-Valley</p>
-                                                    </div>
-                                                    <div class="mix__themes-market">
-                                                        <div class="rate-stars"></div>
-                                                        <span>427</span>
-                                                    </div>
-                                                    <div class="comments">
-                                                        <span class="icon-heart-o">90 loves</span>
-                                                        <span class="icon-bubble2">90 Comments</span>
-                                                        <div class="coments-stars">
-                                                            <div class="rate-stars"></div>
-                                                            <span>(34)</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="mix__items-price">
-                                                    <div class="price">$18</div>
-                                                    <span class="icon-shopping-cart">427</span>
-                                                </div>
-                                                <div class="mix__theme-price">
-                                                    <div class="price">$18</div>
-                                                    <div class="price-wordpres">
-                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
-                                                        <p>Wordpress</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="mix__item list">
-                                        <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
-                                        <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
-                                        <div class="mix__items-content">
-                                            <div class="mix__items-inner">
-                                                <div class="mix__items-holder">
-                                                    <a href="#" class="mix__items-title">Finance and Consulting Business Theme</a>
-                                                    <div class="text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</div>
-                                                    <div class="price-wordpress">
-                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
-                                                        <p>Wordpress</p>
-                                                    </div>
-                                                </div>
-                                                <div class="mix__items-social">
-                                                    <div class="mix__themes">
-                                                        <a href="#"><img src="images/content/Ellipse 6.png" alt=""></a>
-                                                        <p>Theme-Valley</p>
-                                                    </div>
-                                                    <div class="mix__themes-market">
-                                                        <div class="rate-stars"></div>
-                                                        <span>427</span>
-                                                    </div>
-                                                    <div class="comments">
-                                                        <span class="icon-heart-o">90 loves</span>
-                                                        <span class="icon-bubble2">90 Comments</span>
-                                                        <div class="coments-stars">
-                                                            <div class="rate-stars"></div>
-                                                            <span>(34)</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="mix__items-price">
-                                                    <div class="price">$18</div>
-                                                    <span class="icon-shopping-cart">427</span>
-                                                </div>
-                                                <div class="mix__theme-price">
-                                                    <div class="price">$18</div>
-                                                    <div class="price-wordpres">
-                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
-                                                        <p>Wordpress</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-a" data-order="10">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">
@@ -1254,7 +1218,57 @@
 
                                     </div>
 
-                                    <div class="mix__item list">
+                                    <div class="mix__item list less category-a" data-order="11">
+                                        <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
+                                        <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
+                                        <div class="mix__items-content">
+                                            <div class="mix__items-inner">
+                                                <div class="mix__items-holder">
+                                                    <a href="#" class="mix__items-title">Finance and Consulting Business Theme</a>
+                                                    <div class="text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</div>
+                                                    <div class="price-wordpress">
+                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
+                                                        <p>Wordpress</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mix__items-social">
+                                                    <div class="mix__themes">
+                                                        <a href="#"><img src="images/content/Ellipse 6.png" alt=""></a>
+                                                        <p>Theme-Valley</p>
+                                                    </div>
+                                                    <div class="mix__themes-market">
+                                                        <div class="rate-stars"></div>
+                                                        <span>427</span>
+                                                    </div>
+                                                    <div class="comments">
+                                                        <span class="icon-heart-o">90 loves</span>
+                                                        <span class="icon-bubble2">90 Comments</span>
+                                                        <div class="coments-stars">
+                                                            <div class="rate-stars"></div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="mix__items-price">
+                                                    <div class="price">$18</div>
+                                                    <span class="icon-shopping-cart">427</span>
+                                                </div>
+                                                <div class="mix__theme-price">
+                                                    <div class="price">$18</div>
+                                                    <div class="price-wordpres">
+                                                        <a href="#"><img src="images/content/word.png" alt=""></a>
+                                                        <p>Wordpress</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="mix__item list less category-a" data-order="12">
                                         <a class="mix__item-img" href="#"><img src="images/content/green-word.png" alt=""></a>
                                         <a class="mix__items-img" href="#"><img src="images/content/mix__wordpress bg.png" alt=""></a>
                                         <div class="mix__items-content">

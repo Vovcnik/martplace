@@ -60,5 +60,25 @@ $(function() {
     });
 
 
-    var mixer = mixitup(".release__products-inner");
+
+
+    // var mixer = mixitup(".mix__wordpress-themes, .release__products-inner");
+
+    var mixer = mixitup(".mix__wordpress-themes, .release__products-inner", {
+
+        animation: {
+            duration: 5000,
+            enable: true,
+            effects: 'scale fade'
+
+        },
+        selectors: {
+            target: '.less',
+        },
+
+
+
+    });
+
+
 });

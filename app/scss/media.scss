@@ -1,0 +1,155 @@
+@media(max-width:1400px) {
+    .list__page-inner {
+        left: -452px;
+    }
+}
+
+@media(max-width:1260px) {
+    .list__page-inner {
+        left: -445px;
+    }
+    .messages__menu {
+        left: -312px;
+        &::before {
+            left: 315px;
+        }
+    }
+    .notification__menu {
+        left: -267px;
+        &::before {
+            left: 270px;
+        }
+    }
+}
+
+@media(max-width:1150px) {
+    .list__page-inner {
+        left: -452px;
+        min-width: 720px;
+    }
+}
+
+@media(max-width:1190px) {
+    .header__seling {
+        display: none;
+    }
+    .header__box {
+        margin-right: 30px;
+    }
+    .list__page-inner {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: start;
+        min-height: 1310px;
+    }
+    .footer__inner {
+        flex-wrap: wrap;
+        margin-left: 30px;
+        justify-content: flex-start;
+    }
+    .search__header-top {
+        display: none;
+    }
+    .menu {
+        justify-content: normal;
+    }
+    .menu__list {
+        display: none;
+        left: 15px;
+    }
+    .menu__btn {
+        display: block;
+        width: 30px;
+        div {
+            background-color: #555555;
+            height: 3px;
+            &+div {
+                margin-top: 5px;
+            }
+        }
+    }
+    .list__pages {
+        position: absolute;
+        left: -516px;
+    }
+}
+
+@media(max-width:900px) {
+    .footer__col {
+        margin-bottom: 10px;
+    }
+    .header__box .register {
+        display: none;
+    }
+    .header__box {
+        min-width: 400px;
+    }
+    .profile__list {
+        left: 140px;
+    }
+}
+
+@media(max-width:700px) {}
+
+@media(max-width:720px) {
+    .lisi-two {
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .header__box {
+        left: -5px;
+        min-width: 380px;
+    }
+}
+
+@media(max-width:600px) {
+    .profile__list {
+        left: 75px;
+        &::before {
+            left: 200px;
+        }
+    }
+}
+
+@media(max-width:680px) {
+    .lisi-two {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width:520px) {
+    .menu__list {
+        display: none;
+    }
+    .menu__btn {
+        display: block;
+    }
+}
+
+@media(max-width:420px) {
+    .footer__search {
+        width: 100%;
+    }
+}
+
+@media(max-width:370px) {
+    .footer__col {
+        width: 100%;
+        margin-bottom: 10px;
+        left: -4px;
+    }
+    .footer__social-text p {
+        margin-right: 10px;
+    }
+    .footer__copy-text {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(min-width:1191px) {
+    .menu__list {
+        display: block !important;
+    }
+}

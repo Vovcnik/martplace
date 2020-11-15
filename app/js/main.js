@@ -43,7 +43,6 @@ $(function() {
         prefix: "$"
     });
 
-    $('input[type="file"], select').styler();
 
 
     $('.icon-th-list').on('click', function() {
@@ -59,15 +58,52 @@ $(function() {
         $('.icon-th-list').removeClass('active');
     });
 
+    $('.notifications').on('click', function() {
+        $('.notification__menu').toggleClass('bell-color--active');
+        $('.notifications ').toggleClass('bell-color');
+        $('.basket').removeClass('basket-color');
+        $('.messages').removeClass('message-color');
+        $('.messages__menu').removeClass('messages-menu--active');
+        $('.basket-menu').removeClass('basket-menu--active');
+
+    });
+
+
+    $('.basket').on('click', function() {
+        $('.basket-menu').toggleClass('basket-menu--active');
+        $('.basket').toggleClass('basket-color');
+        $('.messages').removeClass('message-color');
+        $('.notifications ').removeClass('bell-color');
+        $('.messages__menu').removeClass('messages-menu--active');
+        $('.notification__menu').removeClass('bell-color--active');
+
+    });
+
+    $('.messages').on('click', function() {
+        $('.messages').toggleClass('message-color');
+        $('.basket').removeClass('basket-color');
+        $('.notifications ').removeClass('bell-color');
+        $('.messages__menu').toggleClass('messages-menu--active');
+        $('.basket-menu').removeClass('basket-menu--active');
+        $('.notification__menu').removeClass('bell-color--active');
+    });
+
+
+    $('input, select').styler();
+
+
+
+    $('.menu__btn').on('click', function() {
+        $('.menu__list').slideToggle();
+    });
 
 
 
     // var mixer = mixitup(".mix__wordpress-themes, .release__products-inner");
-
     var mixer = mixitup(".mix__wordpress-themes, .release__products-inner", {
 
         animation: {
-            duration: 5000,
+            duration: 1000,
             enable: true,
             effects: 'scale fade'
 

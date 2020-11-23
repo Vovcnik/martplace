@@ -97,6 +97,13 @@ $(function() {
         $('.menu__list').slideToggle();
     });
 
+    $('.header__btn-menu').on('click', function() {
+        $('.header__box').toggleClass('active');
+        $('.logo-text').toggleClass('active');
+        $('.basket-menu').removeClass('basket-menu--active');
+        $('.messages__menu').removeClass('messages-menu--active');
+    });
+
 
 
     // var mixer = mixitup(".mix__wordpress-themes, .release__products-inner");

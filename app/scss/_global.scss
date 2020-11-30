@@ -41,6 +41,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
+    outline: none;
 }
 
 ul,
@@ -61,6 +62,13 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 15px;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: none;
 }
 
 .container-fluid {

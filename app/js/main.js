@@ -104,7 +104,18 @@ $(function() {
         $('.messages__menu').removeClass('messages-menu--active');
     });
 
+    $('.tab').on('click', function(e) {
+        e.preventDefault();
 
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+
+
+
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tabs-content--active');
+
+    });
 
     // var mixer = mixitup(".mix__wordpress-themes, .release__products-inner");
     var mixer = mixitup(".mix__wordpress-themes, .release__products-inner", {

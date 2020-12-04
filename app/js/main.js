@@ -117,7 +117,10 @@ $(function() {
 
     });
 
-    // var mixer = mixitup(".mix__wordpress-themes, .release__products-inner");
+    $('.favorite__priview').on('click', function() {
+        $(this).toggleClass('favorite__priview--active')
+
+    });
     var mixer = mixitup(".mix__wordpress-themes, .release__products-inner", {
 
         animation: {

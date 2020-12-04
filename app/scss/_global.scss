@@ -71,6 +71,11 @@ button:-moz-focusring {
     outline: none;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
 .container-fluid {
     width: 100%;
     margin: 0 auto;

@@ -1010,10 +1010,16 @@
 
 // category__page end
 // category__page-sidebarv start
+.filter__item-drop--active .sidebar__title {
+    &::after {
+        transform: rotate(180deg);
+    }
+}
+
 .sidebar {
     &__column {
         width: 260px;
-        min-height: 370px;
+        min-height: 0px;
         background-color: #fff;
         border-radius: 5px;
         padding: 17px 30px 10px;
@@ -1026,12 +1032,13 @@
         }
     }
     &__inner {
-        position: relative;
+        li {
+            position: relative;
+        }
         li a {
             color: $body;
             padding-bottom: 15px;
             padding-left: 20px;
-            position: relative;
             &:hover {
                 color: $blue;
             }
@@ -1054,6 +1061,7 @@
         font-size: 20px;
         color: #010101;
         position: relative;
+        cursor: pointer;
         &::after {
             content: "\f107";
             font-family: "icomoon";
@@ -1062,6 +1070,8 @@
             color: $body;
             position: absolute;
             right: -15px;
+            transition: all .3s;
+            transform-origin: 23% 12px;
         }
     }
 }
@@ -1082,7 +1092,7 @@
 }
 
 .pricing__range {
-    min-height: 290px;
+    min-height: 0px;
     button {
         color: #fff;
         background-color: $blue;
@@ -3735,7 +3745,7 @@ button.favorite__priview.favorite__priview--active {
 }
 
 // responsive__aside start
-.responsive__aside-inner {
+.responsive__aside {
     margin-left: 30px;
 }
 
@@ -3823,5 +3833,253 @@ button.favorite__priview.favorite__priview--active {
     }
 }
 
+.aside__item-product {
+    li {
+        padding: 30px 0;
+        border-bottom: 1px solid #ececec;
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 32px;
+        }
+        span {
+            font-size: 18px;
+            @include f500;
+            color: black;
+            position: absolute;
+            right: 0px;
+        }
+    }
+    a {
+        color: $body;
+        padding-left: 30px;
+    }
+    .icon-shopping-cart::before {
+        color: $blue;
+    }
+    .icon-heart-o::before {
+        color: #7f4ec2;
+    }
+    .icon-bubble2::before {
+        color: #58c9e9;
+    }
+}
+
+.aside__item-reiding {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    .rate-star {
+        cursor: pointer;
+    }
+    p {
+        padding-top: 3px;
+        color: #7e7e7e;
+    }
+}
+
+.aside__item-title {
+    font-size: 20px;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+
+.product__info-aside {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #333333;
+    li {
+        padding-bottom: 25px;
+        position: relative;
+    }
+    span {
+        position: absolute;
+        color: $body;
+        font-size: 15px;
+        left: 130px;
+    }
+    .tags {
+        color: $blue;
+    }
+}
+
+.aside__item-autor {
+    text-align: center;
+    .img {
+        background-image: url('../images/content/user product.png');
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .name-product {
+        font-size: 18px;
+        color: #000000;
+        padding-bottom: 10px;
+    }
+    .date {
+        font-size: 15px;
+        color: #7e7e7e;
+    }
+    .footer__social-link {
+        margin-top: 30px;
+    }
+    button {
+        width: 140px;
+        padding: 12px 16px;
+        &+button {
+            margin-left: 20px;
+        }
+    }
+    .profile {
+        background-color: $blue;
+    }
+    .message {
+        background-color: #7347c1;
+    }
+}
+
+.aside__item-btn {
+    display: flex;
+}
+
 // responsive__aside end
 // resposive end
+// work start
+.breadcrumbs-inner-work {
+    .breadcrumbs-title-work {
+        font-size: 30px;
+        color: #ffffff;
+        line-height: 50px;
+        padding-top: 50px;
+        max-width: 415px;
+        margin: 0 auto;
+    }
+    .breadcrumbs__list {
+        padding-top: 70px;
+    }
+}
+
+.work__columms {
+    &-title {
+        color: #000000;
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+    &-text {
+        margin-left: 220px;
+        p {
+            line-height: 30px;
+        }
+    }
+}
+
+.columms-item-inner {
+    padding-top: 130px;
+    margin-bottom: 130px;
+    display: flex;
+    img {
+        width: 450px;
+        height: 360px;
+    }
+    button {
+        padding: 9px 17px;
+        background-color: #ffffff;
+        color: #0674ec;
+        border-radius: 25px;
+        margin-top: 30px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+    button.work__columm-free {
+        background-color: #0674ec;
+        color: #ffffff;
+    }
+}
+
+.work__columms-wrapper {
+    background-color: #eff1f5;
+}
+
+.work__columms-text:nth-last-child(2) {
+    margin-right: 220px;
+    margin-left: 0;
+}
+
+// work end
+// login start
+.login__wrapper {
+    background-color: $bg;
+}
+
+.login__item,
+.login__back-list {
+    width: 550px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    .login__text {
+        padding: 50px 50px 30px;
+        border-bottom: 1px solid #e8ebf0;
+    }
+    p {
+        line-height: 30px;
+    }
+    .login__search {
+        padding: 40px 50px 60px;
+        &-title {
+            color: #000000;
+            @include f500;
+            padding-bottom: 15px;
+        }
+        input {
+            border: none;
+            padding: 15px 12px;
+            background-color: #f4f5f8;
+            color: #898f96;
+            width: 100%;
+        }
+        .login__btn {
+            margin-top: 30px;
+            margin-bottom: 60px;
+            background-color: #0674ec;
+            color: #ffffff;
+            padding: 20px 50px;
+            border-radius: 50px;
+            @include f500;
+        }
+    }
+}
+
+// login end
+// login__back start
+.login__back {
+    &-header {
+        border-bottom: 1px solid #e8ebf0;
+        text-align: center;
+        padding: 60px 0px 30px;
+    }
+    &-title {
+        color: #000000;
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+    &-content {
+        padding: 0px 50px 60px;
+    }
+}
+
+.user__password-title {
+    color: #000000;
+    @include f500;
+    padding-bottom: 15px;
+}
+
+// login__back end

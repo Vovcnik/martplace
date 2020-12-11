@@ -43,7 +43,10 @@ $(function() {
         prefix: "$"
     });
 
-
+    $('.filter__item-drop, .filter__extra').on('click', function() {
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle('200');
+    });
 
     $('.icon-th-list').on('click', function() {
         $('.mix__items').addClass('list');

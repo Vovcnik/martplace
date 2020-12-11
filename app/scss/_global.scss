@@ -91,10 +91,23 @@ button {
     &__list {
         li {
             display: inline-block;
+            position: relative;
+            &+li {
+                padding-left: 10px;
+            }
+            &::after {
+                content: "/";
+                position: absolute;
+                right: -12px;
+                color: #ffff;
+            }
             &:last-child {
                 a,
                 span {
                     color: #bfcad7;
+                }
+                &::after {
+                    display: none;
                 }
             }
         }

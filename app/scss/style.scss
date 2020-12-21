@@ -902,7 +902,7 @@
         top: -4px;
         text-align: center;
         margin-right: 30px;
-        z-index: 4;
+        z-index: 1;
     }
     .jq-selectbox__select.jq-selectbox__select {
         border: 1px solid #eceff2;
@@ -921,11 +921,11 @@
         @include f300;
         font-size: 16px;
         line-height: 20px;
-        &.opened:hover {
-            .jq-selectbox__trigger-arrow {
-                transform: rotate(180deg);
-            }
-        }
+        // &.opened {
+        //     .jq-selectbox__trigger-arrow {
+        //         transform: rotate(180deg);
+        //     }
+        // }
     }
 }
 
@@ -1102,6 +1102,7 @@
         cursor: pointer;
         margin-left: 15px;
         margin-top: 20px;
+        margin-bottom: 10px;
     }
     &-box {
         text-align: center;
@@ -1445,7 +1446,7 @@
         &.colors {
             margin-left: 15px;
             margin-right: 15px;
-            &:hover {
+            &.actives {
                 background-color: #7347c1;
                 color: #fff;
             }
@@ -2025,6 +2026,8 @@ button.slick-prev {
 
 .item__info {
     display: flex;
+    width: 300px;
+    justify-content: space-between;
 }
 
 .jq-ry-group-wrapper {
@@ -4015,10 +4018,9 @@ button.favorite__priview.favorite__priview--active {
     background-color: $bg;
 }
 
-.login__item,
-.login__back-list {
-    width: 550px;
-    height: 450px;
+.login__item {
+    max-width: 550px;
+    min-height: 450px;
     background-color: #fff;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
@@ -4061,6 +4063,16 @@ button.favorite__priview.favorite__priview--active {
 // login end
 // login__back start
 .login__back {
+    &-list {
+        max-width: 550px;
+        min-height: 610px;
+        background-color: #fff;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        border-radius: 4px;
+        margin-bottom: 100px;
+        margin-top: 70px;
+    }
     &-header {
         border-bottom: 1px solid #e8ebf0;
         text-align: center;
@@ -4073,13 +4085,245 @@ button.favorite__priview.favorite__priview--active {
     }
     &-content {
         padding: 0px 50px 60px;
+        input {
+            border: none;
+            padding: 15px 12px;
+            background-color: #f4f5f8;
+            color: #898f96;
+            width: 100%;
+        }
+        .login__btn {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            background-color: #0674ec;
+            color: #ffffff;
+            padding: 18px 50px;
+            border-radius: 50px;
+            @include f500;
+        }
     }
 }
 
 .user__password-title {
     color: #000000;
     @include f500;
+    padding-top: 30px;
     padding-bottom: 15px;
 }
 
+.user__password-cheked {
+    p+p {
+        padding-left: 15px;
+    }
+    padding-top: 30px;
+    display: flex;
+    .jq-checkbox {
+        border-radius: 50%;
+        border: none;
+        width: 20px;
+        height: 20px;
+        border: 4px solid #e6e9ed;
+        background: #ffffff;
+        &.checked {
+            background: #0674ec;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    .jq-checkbox.checked .jq-checkbox__div {
+        width: 11px;
+        height: 6px;
+        margin: 5px 0 0 4px;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+}
+
+.footer__text {
+    display: flex;
+    justify-content: space-between;
+    color: #898f96;
+    a {
+        color: #0674ec;
+    }
+}
+
 // login__back end
+// favourites start 
+.containers {
+    padding: 0 15px;
+}
+
+.favorites__page-inner {
+    padding-top: 0;
+    .category__page-filter .jq-selectbox {
+        right: -50px;
+    }
+    .filter__by {
+        border-left: 1px solid #eceff2;
+        border-right: 1px solid #eceff2;
+        width: 140px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        &-title {
+            color: #000000;
+            font-size: 24px;
+        }
+        .jq-selectbox__select {
+            width: 110px;
+            height: 44px;
+            color: #747b86;
+            background: none;
+            border: 1px solid #eceff2;
+            box-shadow: none;
+            padding: 5px 45px 0 10px;
+            &:hover {
+                background: none;
+            }
+        }
+        .jq-selectbox__trigger {
+            border-left: none;
+        }
+        .jq-selectbox__trigger-arrow {
+            border-right: none;
+            border-left: none;
+            &::before {
+                content: "\f107";
+                font-family: 'icomoon';
+                font-size: 15px;
+                line-height: 42px;
+                color: #555555;
+                position: absolute;
+                top: -20px;
+                right: 4px;
+            }
+        }
+        .jq-selectbox {
+            right: -17px;
+            top: -4px;
+            text-align: center;
+            margin-right: 30px;
+            z-index: 1;
+        }
+        .jq-selectbox__select.jq-selectbox__select {
+            border: none;
+        }
+        .jq-selectbox__dropdown {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #eceff2;
+            background: #FFF;
+            border-radius: 0;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            box-shadow: none;
+            @include f300;
+            font-size: 16px;
+            line-height: 20px;
+            &.opened:hover {
+                .jq-selectbox__trigger-arrow {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .jq-selectbox__dropdown {
+            top: 75px;
+            left: -28px;
+        }
+    }
+}
+
+.favorites__inner {
+    display: flex;
+    .mix__item.list {
+        max-width: 361px;
+    }
+    .mix__wordpress-themes {
+        min-width: 1140px;
+    }
+    .mix__item-img {
+        width: 361px;
+    }
+    .product__item-content {
+        width: 380px;
+    }
+}
+
+.favorites__inner {
+    &.mix__item {
+        max-width: 1140px;
+        text-align: center;
+        .product__item-content {
+            width: 779px;
+        }
+    }
+}
+
+.favorites__item-content {
+    padding: 0;
+    .favorites__item-head {
+        padding: 30px 40px 30px 30px;
+    }
+    p {
+        width: 300px;
+        padding-top: 15px;
+    }
+    .product__item-price {
+        background-color: #e6f1fd;
+        color: #0674ec;
+    }
+    .product__item-market::before {
+        left: 30px;
+        top: 1px;
+    }
+    .product__item-market {
+        padding-left: 55px;
+    }
+    .product__item-footer-inner {
+        margin: 0;
+        padding: 15px 30px;
+        .jq-ry-container {
+            padding: 1px 15px;
+        }
+    }
+}
+
+.item__info-prise-heard {
+    display: flex;
+}
+
+.pagination-favorites {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+// favourites end
+// error start 
+.error {
+    margin: 0 auto;
+    text-align: center;
+    img {
+        width: 393px;
+        height: 447px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .error-text {
+        color: #000000;
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+    .error-btn button {
+        background-color: #0674ec;
+        color: #fff;
+        border-radius: 50px;
+        padding: 20px 40px;
+        margin-bottom: 100px;
+    }
+}
+
+// error end

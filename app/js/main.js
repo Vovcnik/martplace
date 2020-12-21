@@ -6,6 +6,7 @@ $(function() {
         readOnly: true,
         spacing: "5px",
         ratedFill: "#ffc000"
+
     });
     $(".rate-stars").rateYo({
         rating: 4,

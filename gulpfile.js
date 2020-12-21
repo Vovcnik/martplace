@@ -26,7 +26,8 @@ gulp.task('style', function() {
             'node_modules/magnific-popup/dist/magnific-popup.css',
             'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
             'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
-            'node_modules/ion-rangeslider/css/ion.rangeSlider.css'
+            'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
+            'node_modules/@fancyapps/dist/jquery.fancybox.css'
 
 
         ])
@@ -43,7 +44,8 @@ gulp.task('script', function() {
             'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
             'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
             'node_modules/mixitup/dist/mixitup.js',
-            'node_modules/ion-rangeslider/js/ion.rangeSlider.js'
+            'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+            'node_modules/@fancyapps/dist/jquery.fancybox.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

@@ -32,6 +32,23 @@ $(function() {
         slidesToScroll: 3,
         slidesToShow: 3,
         arrows: true,
+        responsive: [{
+            breakpoint: 1150,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+
+            }
+        }, {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+
+            }
+        }, ]
 
     });
 
@@ -44,7 +61,7 @@ $(function() {
         prefix: "$"
     });
 
-    $('.filter__item-drop, .filter__extra').on('click', function() {
+    $('.filter__item-drop .sidebar__title, .filter__extra').on('click', function() {
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle('200');
     });

@@ -42,7 +42,7 @@
                             </div>
                             <div class="header__box">
                                 <div class="header__clik">
-                                    <a class="register" data-fancybox href="#">Стань продавцом</a>
+                                    <a class="register" data-fancybox data-src="#modal" href="javascript:;">Стань продавцом</a>
                                     <div class="header__box-inner">
                                         <div class="notification__box">
                                             <a class="notifications icon-bell-o" href="#">
@@ -624,25 +624,27 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="create__search">
-                <div class="crate-bg">
-                    <div class="crate-bg__search"></div>
-                    <div class="search2"></div>
-                    <div class="search3"></div>
+
+
+                <div class="create__search">
+                    <div class="crate-bg">
+                        <img src="../images/content/bg-search2.png" alt="">
+                    </div>
+
+                    <form>
+                        <input type="text " pLacehoLder="Поиск товара..." required>
+                        <button type="submit">Search Now</button>
+
+                        <select class="border-left">
+                        <option class="search-button" value="1">All Categories</option>
+                        <option class="search-button" value="2">Premium</option>
+                        <option class="search-button" value="3">Regular</option>
+                        
+                        </select>
+
+                    </form>
                 </div>
-
-                <form>
-                    <input type="text " pLacehoLder="Поиск товара..." required>
-                    <select class="border-left">
-        <option class="search-button" value="1">All Categories</option>
-        <option class="search-button" value="2">Premium</option>
-        <option class="search-button" value="3">Regular</option>
-        </select>
-                    <button type="submit">Search Now</button>
-                </form>
             </div>
-
         </div>
     </section>
     <section class="create__tabs">
@@ -725,9 +727,9 @@
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
                             </p>
                             <div class="product__item-box">
-                                <div class="item-desc">website</div>
-                                <div class="item-desc">plugin</div>
-                                <div class="item-desc">landing page</div>
+                                <a href="#" class="item-desc">website</a>
+                                <a href="#" class="item-desc">plugin</a>
+                                <a href="#" class="item-desc">landing page</a>
                             </div>
                             <div class="product__item-footer">
                                 <div class="product__item-footer-inner">
@@ -1723,19 +1725,19 @@
             </div>
     </section>
     <section class="money__back">
+        <div class="container">
+            <div class="money__back-inner">
+                <div class="money__back-item">
+                    <div class="img__money"></div>
+                    <div class="money__back-text">30 Days Money Back <a href="#"><span>Guarantee</span></div></a>
+                    </div>
 
-        <div class="money__back-inner">
-            <div class="money__back-item">
-                <div class="img__money"></div>
-                <div class="money__back-text">30 Days Money Back <a href="#"><span>Guarantee</span></div></a>
-                </div>
-
-                <div class="money__support-item">
-                    <div class="img__support"></div>
-                    <div class="money__support-text">Fast and Friendly <a href="#"><span>Support</span></div></a>
+                    <div class="money__support-item">
+                        <div class="img__support"></div>
+                        <div class="money__support-text">Fast and Friendly <a href="#"><span>Support</span></div></a>
+                        </div>
                     </div>
                 </div>
-
     </section>
     <section class="ready">
         <div class="ready__wrapper">
@@ -1883,7 +1885,31 @@
         </div>
     </div>
     <div id="modal">
-        123456
+        <div class="login__back-inner">
+            <div class="login__back-header">
+                <div class="login__back-title">Welcome Back</div>
+                <div class="login__back-text">
+                    <p>You can sign in with your username</p>
+                </div>
+            </div>
+            <div class="login__back-content">
+                <form class="form-inner">
+                    <div class="user__password-title">Username</div>
+                    <p><input type="text" placeholder="Enter your username..."></p>
+                    <div class="user__password-title">Password</div>
+                    <p><input type="password" id="password" placeholder="Enter your Password"></p>
+                    <div class="user__password-cheked">
+                        <p><input type="checkbox" checked></p>
+                        <p>Remember me</p>
+                    </div>
+                    <button class="login__btn" type="submit">Login Now</button>
+                    <div class="footer__text">
+                        <p>Lost your <a href="#">username</a> or <a href="#">password</a>?</p>
+                        <p>Don't have an <a href="#">account</a>?</p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
